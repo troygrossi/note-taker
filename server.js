@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("public"));
+app.use(express.static("./develop/public"));
 
 const htmlRoutes = require("./Develop/routes/htmlRoutes/index.js");
 const apiRoutes = require("./Develop/routes/apiRoutes/index.js");
